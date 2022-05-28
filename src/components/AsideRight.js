@@ -35,16 +35,16 @@ function AsideRight() {
         });
       }, []);
     
-      const convertKtoF = (temp) => {
+      const convertCtoF = (temp) => {
         return Math.floor(((temp - 273.15) * 9) / 5 + 32);
       };
     
       const minMaxTemp = (min, max) => {
         return (
           <h6>
-            <span>Low: {convertKtoF(min)}&deg;</span>
+            <span>Low: {convertCtoF(min)}&deg;</span>
             {' - '}
-            <span>High: {convertKtoF(max)}&deg;</span>
+            <span>High: {convertCtoF(max)}&deg;</span>
           </h6>
         );
       };
@@ -63,7 +63,7 @@ function AsideRight() {
             {', '}
             <span>{country}</span>
             <i className={customCl}></i>
-            <h1>{convertKtoF(temp)}&deg;</h1>
+            <h1>{convertCtoF(temp)}&deg;</h1>
             {minMaxTemp(temp_min, temp_max)}
             <h4>{description}</h4>
           </div>
