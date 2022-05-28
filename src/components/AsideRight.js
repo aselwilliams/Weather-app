@@ -1,6 +1,7 @@
 import React,{useEffect, useState} from 'react';
 import axios from 'axios';
-import LocalTime from './LocalTimeFn';
+import LocalTime from './LocalTime';
+import 'weather-icons/css/weather-icons.css';
 
 function AsideRight() {
     const [currLocData, setCurrLocData]=useState({
